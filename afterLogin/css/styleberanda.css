@@ -1,0 +1,244 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header */
+.navbar {
+    height: 85px;
+    display: flex;
+    padding: 0 5%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgb(1, 1, 1, 0.1);
+    background: white;
+}
+
+.navbar > h1 {
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    font-size: 0.9rem;
+}
+
+.nav-menu .account {
+    width: 25px;
+    height: 25px;
+    border-radius: 25pt;
+}
+
+.account img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25pt;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu a:hover {
+    color: rgb(14, 29, 143);
+}
+
+/* Promo */
+.hero-container {
+    display: flex;
+    height: 500px;
+    padding: 0 5%;
+    box-shadow: 0 3px 6px 0 rgb(1, 1, 1, 0.1);
+}
+
+.hero-container > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container h1 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.hero-container p {
+    font-size: 20px;
+}
+
+.hero-container > img {
+    width: 50%;
+    height: 323px;
+    align-self: center;
+    justify-content: right;  
+}
+
+.hero-container button {
+    background: rgb(14, 29, 143);
+    color: white;
+    border: 1pt solid rgb(14, 29, 143);
+    width: 150px;
+}
+
+/* Paket -> Jenjang, Gaya Belajar, Testimoni, Blog */
+#paket{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5%;
+    text-align: center;
+    box-shadow: 0 3px 6px 0 rgb(1, 1, 1, 0.1);
+}
+
+.paket-heading{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.paket-heading h3{
+    font-size: 35px;
+}
+
+.paket-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.paket-box{
+    width: 250px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.paket-img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.paket-img img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+    padding: 25px 0 0 0;
+}
+
+.paket-text{
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.paket-text .paket-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:#272727;
+}
+
+.paket-text .paket-title:hover{
+    color: rgb(14, 29, 143);
+    transition: all ease 0.3s;
+    text-decoration: none;
+}
+
+.paket-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+
+.paket-text a{
+    color: #0f0f0f;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.paket-text a:hover{
+    color: rgb(14, 29, 143);
+}
+
+/* Footer */
+#footer{
+    background: rgb(14, 29, 143);
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+.fUp {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.column h4 {
+    font-size: 1.5vw;
+}
+
+.column p {
+    font-size: 1vw;
+    color: #9b9b9b;
+}
+
+.column a {
+    text-decoration: none;
+    color: #9b9b9b;
+    
+}
+
+.column a:hover {
+    color: white;
+}
+
+.column .logo {
+    width: 1.2vw;
+    height: 1.2vw;
+    border-radius: 25pt;
+    display: flex;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25pt;
+}
+
+.fDown {
+    display: flex;
+    padding: 0 5%;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+}
+
+.fDown p{
+    font-size: 12px;
+    color: #595959;
+}
+
+.fDown a {
+    text-decoration: none;
+    color: #595959;
+}
