@@ -15,7 +15,10 @@
             <p><a href="kelas1.php">Belajar</a></p>
             <p><a href="">Testimoni</a></p>
             <p><a href="">Blog</a></p>
-            <p class="account"><a href=""><img src="../img/user.png" alt="Akun"></a></p>
+            <form action="../logout.php"><button type="submit"><p class="account">
+                <a href=""><img src="../img/user.png" alt="Akun"></a>
+                </p></button></form>
+            
         </div>
     </header>
 
