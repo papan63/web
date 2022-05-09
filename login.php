@@ -11,7 +11,7 @@
 <body>
     <div class="flex items-center w-screen h-screen justify-center">
         <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
-            <form action="afterLogin/beranda.php" method="post">
+            <form action="loginProcess.php" method="post" onSubmit="validasi()">
                 <div class="mb-4">
                     <label class="block text-grey-darker text-sm font-bold mb-2" for="username">
                         Username
@@ -36,5 +36,22 @@
             </form>
         </div>
     </div>
+
+    <script>
+        function validasi(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+    
+            if(username == "" && password == ""){
+                alert('Anda harus mengisi semua data!');
+            }else if(username != "lisa" && password != "lisablackpink"){
+                alert('Username atau Password yang anda masukan salah!')
+            }else{
+                return true;
+            }
+
+            
+        }   
+    </script>
 </body>
 </html>
